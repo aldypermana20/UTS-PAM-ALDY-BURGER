@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Burger" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/biru</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="android:statusBarColor">@color/biru</item>
+        <item name="android:navigationBarColor">@color/biru</item>
+    </style>
+
+    <style name="Theme.Burger" parent="Base.Theme.Burger" />
+</resources>

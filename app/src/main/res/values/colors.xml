@@ -1,0 +1,17 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_orange">#FF6B35</color>
+    <color name="dark_orange">#E85D04</color>
+    <color name="light_cream">#FFF8F0</color>
+    <color name="dark_gray">#2C2C2C</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="accent_green">#06D6A0</color>
+    <color name="gray">#808080</color>
+    <color name="teal_700">#018786</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="orange">#FF5722</color>
+    <color name="red">#C52525</color>
+    <color name="biru">#0068DB</color>
+    <color name="bottom_nav_color">#6200EE</color>
+</resources>

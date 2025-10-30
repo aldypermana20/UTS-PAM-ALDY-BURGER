@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Burger</string>
+    <string name="app_name_display">Mesen\nMakanan</string>
+    <string name="tagline">Order foods at your fingertips</string>
+    <string name="start_now">Start now</string>
+    <string name="app_logo">App Logo</string>
+
+    <!-- Welcome Screen -->
+    <string name="signup_title">Signup</string>
+    <string name="signup_description">Create your account and order your favorite meals effortlessly</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="food_illustration">Food Illustration</string>
+
+    <!-- Login Screen -->
+    <string name="login_user">Login User</string>
+    <string name="login_subtitle">Welcome back! Login to continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- Register Screen -->
+    <string name="register_subtitle">Create your account to get started</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="back">Back</string>
+    <string name="food_order_details">Pesanan Saya</string>
+    <string name="order_now">Order</string>
+    <string name="hello_nazwa">Nama Makanan</string>
+    <string name="food_image">Gambar Makanan</string>
+</resources>
