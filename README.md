@@ -1,5 +1,5 @@
 Assalamualaikum wr.wb 
-Disini saya membuat aplikasi pemesanan makanan yaitu ****burger****
+Disini saya membuat aplikasi pemesanan makanan yaitu ****aldy - burger****
 
 Pada tahap Awal yaitu ****Splash Screen dan Welcome****
 **Splash Screen (MainActivity)**
