@@ -38,9 +38,11 @@ Harga
 ****Bottom Navigation****
 
 Terdapat tiga menu utama di bagian bawah:
+
 Home 🏠
 Order 🛒
 Profile 👤
+
 Pengguna dapat memilih burger yang diinginkan dengan mengklik salah satu item dari daftar.
 
 **Detail Produk dan Pemesanan**
