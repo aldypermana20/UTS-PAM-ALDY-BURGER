@@ -18,7 +18,7 @@ Setelah Splash Screen, pengguna diarahkan ke halaman **Welcome** yang berisi:
 
 ---
 
-## 🧾 Proses Registrasi dan Login
+## Proses Registrasi dan Login
 
 ### 🔹 Register Activity
 Pengguna baru dapat membuat akun dengan mengisi:
@@ -34,7 +34,7 @@ Jika validasi berhasil, pengguna akan diarahkan ke halaman utama yaitu **Home Ac
 
 ---
 
-## 🏠 Halaman Utama dan Daftar Menu
+## Halaman Utama dan Daftar Menu
 
 ### 🔹 Home Activity
 Menampilkan **HomeFragment** yang berisi daftar burger dalam bentuk **RecyclerView**.
@@ -55,7 +55,7 @@ Pengguna dapat memilih burger yang diinginkan dengan mengklik salah satu item da
 
 ---
 
-## 🍔 Detail Produk dan Pemesanan
+## Detail Produk dan Pemesanan
 
 ### 🔹 Food Detail Activity
 Setelah burger diklik, pengguna akan melihat halaman detail berisi:
@@ -74,7 +74,7 @@ Setelah lengkap, pengguna menekan **Pesan Sekarang**, dan data pesanan disimpan 
 
 ---
 
-## ✅ Konfirmasi dan Riwayat Pesanan
+## Konfirmasi dan Riwayat Pesanan
 
 ### 🔹 Success Activity
 Menampilkan pesan sukses seperti:
