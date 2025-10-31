@@ -1,5 +1,7 @@
 # Aplikasi pemesanan makanan online yang berfokus pada menu burger.  
-Aplikasi ini dibuat untuk UTS Pengembangan Aplikasi Mobile
+
+---
+https://drive.google.com/drive/folders/1YlISxYhr65IZ0mxf8IleaKMVX-EreqWP?usp=drive_link
 ---
 
 ## Pada tahap Awal yaitu Splash Screen dan Welcome
@@ -126,7 +128,7 @@ Saat pengguna menekan **Keluar**, aplikasi akan:
 
 ## 💡 Tentang Pengembang
 **Dibuat oleh:** Aldy Permana  
-**Tujuan:** Proyek aplikasi Android sederhana untuk UTS pembuatan aplikasi pemesanan makanan (burger).
+**Tujuan:** Project Aplikasi ini dibuat untuk UTS Pengembangan Aplikasi Mobile
 
 
 
