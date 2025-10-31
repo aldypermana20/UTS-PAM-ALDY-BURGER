@@ -1,4 +1,4 @@
-# aplikasi pemesanan makanan online yang berfokus pada menu burger.  
+# Aplikasi pemesanan makanan online yang berfokus pada menu burger.  
 Aplikasi ini dibuat untuk UTS Pengembangan Aplikasi Mobile
 ---
 
