@@ -1,18 +1,153 @@
-Penjelasan Alur Aplikasi Burger
+🍔 Aplikasi Burger
+
 Aplikasi Burger merupakan aplikasi pemesanan makanan khusus burger yang dirancang dengan antarmuka sederhana dan user-friendly. Aplikasi ini memiliki alur kerja yang sistematis mulai dari pembukaan aplikasi hingga proses logout.
-Tahap Awal: Splash Screen dan Welcome
-Ketika pengguna pertama kali membuka aplikasi, mereka akan disambut dengan Splash Screen (MainActivity) yang menampilkan logo aplikasi selama 2-3 detik. Setelah itu, aplikasi secara otomatis berpindah ke Welcome Screen (WelcomeActivity) yang menampilkan halaman selamat datang dengan gambar burger, judul aplikasi, serta dua tombol utama yaitu "Login" untuk pengguna yang sudah terdaftar dan "Register" untuk pengguna baru yang ingin membuat akun.
-Proses Registrasi dan Login
-Pengguna yang belum memiliki akun dapat memilih tombol "Register" untuk masuk ke halaman Register Activity. Di halaman ini, pengguna diminta mengisi formulir pendaftaran yang terdiri dari nama, email, dan password. Setelah mengklik tombol "Register", data pengguna akan disimpan sementara tanpa menggunakan database, kemudian aplikasi otomatis mengarahkan pengguna ke halaman Login Activity. Di halaman login, pengguna memasukkan email dan password yang telah didaftarkan. Setelah proses validasi berhasil, pengguna akan diarahkan ke halaman utama aplikasi yaitu Home Activity.
-Halaman Utama dan Daftar Menu
-Home Activity menampilkan HomeFragment yang berisi daftar burger dalam bentuk RecyclerView. Setiap item burger menampilkan gambar, nama (seperti Cheese Burger, Beef Burger, dan lainnya), deskripsi singkat, serta harga. Di bagian bawah layar terdapat Bottom Navigation dengan tiga menu utama yaitu Home (ikon rumah), Order (ikon keranjang belanja), dan Profile (ikon pengguna). Pengguna dapat menjelajahi berbagai pilihan burger yang tersedia dan memilih burger yang diinginkan dengan mengklik item tersebut.
-Detail Produk dan Pemesanan
-Ketika pengguna mengklik salah satu burger dari daftar, aplikasi akan membuka Food Detail Activity yang menampilkan informasi lengkap tentang burger tersebut. Halaman detail ini menampilkan gambar burger dalam ukuran besar, nama burger, deskripsi detail, harga, serta tombol "Order Now". Setelah pengguna yakin dengan pilihannya dan mengklik tombol "Order Now", aplikasi akan membuka Order Confirm Activity yang berisi formulir pemesanan.
-Di halaman pemesanan, pengguna diminta mengisi tiga informasi penting yaitu jumlah porsi yang diinginkan (input berupa angka), nama pemesan (input text), dan alamat pengiriman (input text). Aplikasi dilengkapi dengan sistem validasi yang akan menampilkan pesan peringatan berupa toast jika ada field yang masih kosong. Setelah semua data terisi lengkap dan pengguna mengklik tombol "Pesan Sekarang", data pesanan akan disimpan ke dalam Order Manager yang menyimpan data di memori, kemudian aplikasi berpindah ke Success Activity.
-Konfirmasi dan Riwayat Pesanan
-Success Activity menampilkan notifikasi keberhasilan pemesanan dengan sapaan "Halo Nazwa," diikuti pesan "Pesananmu Berhasil Diterima! 🎉". Halaman ini juga menampilkan detail pesanan lengkap yang mencakup nama makanan (misalnya Cheese Burger), jumlah porsi yang dipesan (misalnya 2 porsi), nama pemesan (Nazwa), dan alamat pengiriman lengkap (misalnya Jl. Contoh No. 123). Di bagian bawah terdapat pesan terima kasih dan tombol "oke" yang ketika diklik akan mengembalikan pengguna ke Home Activity.
-Pengguna dapat melihat daftar pesanan yang telah dibuat dengan mengklik ikon Order (keranjang belanja) pada Bottom Navigation. Aplikasi akan menampilkan Order Fragment yang berisi daftar lengkap pesanan dalam bentuk kartu (card view). Setiap kartu pesanan menampilkan gambar burger, nama burger, jumlah porsi, harga total, nama pemesan, alamat pengiriman, dan waktu pemesanan. Jika pengguna belum melakukan pemesanan sama sekali, halaman ini akan menampilkan pesan "Belum ada pesanan" disertai ajakan "Yuk pesan burger favoritmu!" untuk mendorong pengguna melakukan pemesanan.
-Profil Pengguna dan Logout
-Dengan mengklik ikon Profile pada Bottom Navigation, pengguna akan diarahkan ke Profile Activity yang menampilkan informasi profil lengkap. Halaman ini menampilkan foto profil pengguna, nama (Nazwa), dan email (nazwa@example.com). Terdapat dua kategori menu yaitu "Akun Saya" yang berisi opsi Edit Profile, Alamat, dan Riwayat Pesanan, serta "Pengaturan" yang berisi menu Notifikasi, Bantuan, dan tombol Keluar berwarna merah.
-Ketika pengguna memutuskan untuk keluar dari aplikasi dengan mengklik tombol "Keluar", aplikasi akan melakukan proses logout dan mengarahkan pengguna kembali ke halaman Login Activity. Perlu dicatat bahwa karena aplikasi ini tidak menggunakan database, semua data pesanan yang tersimpan di memori akan hilang setelah aplikasi ditutup atau proses logout dilakukan. Hal ini membuat pengguna harus melakukan pemesanan ulang jika ingin melihat riwayat pesanan setelah login kembali.
-![WhatsApp Image 2025-10-31 at 21 06 10_f6f85067](https://github.com/user-attachments/assets/22543ee0-f7ed-4cfb-98bb-e72c093fa1c5)
+
+🏁 Tahap Awal: Splash Screen dan Welcome
+
+Splash Screen (MainActivity)
+Saat pengguna pertama kali membuka aplikasi, akan muncul tampilan Splash Screen selama 2–3 detik yang menampilkan logo aplikasi.
+
+Welcome Screen (WelcomeActivity)
+Setelah Splash Screen, pengguna diarahkan ke halaman selamat datang yang berisi:
+
+Gambar burger dan judul aplikasi.
+
+Dua tombol utama:
+
+Login – untuk pengguna yang sudah memiliki akun.
+
+Register – untuk pengguna baru yang ingin membuat akun.
+
+🧾 Proses Registrasi dan Login
+
+Register Activity
+Pengguna baru dapat membuat akun dengan mengisi:
+
+Nama
+
+Email
+
+Password
+
+Setelah menekan tombol Register, data akan disimpan sementara (tanpa database) dan pengguna otomatis diarahkan ke Login Activity.
+
+Login Activity
+Pengguna memasukkan email dan password yang telah didaftarkan.
+Jika validasi berhasil, pengguna akan diarahkan ke halaman utama yaitu Home Activity.
+
+🏠 Halaman Utama dan Daftar Menu
+
+Home Activity menampilkan HomeFragment berisi daftar burger dalam bentuk RecyclerView.
+
+Setiap item menampilkan:
+
+Gambar burger
+
+Nama burger (contoh: Cheese Burger, Beef Burger, dll)
+
+Deskripsi singkat
+
+Harga
+
+🔽 Bottom Navigation
+
+Terdapat tiga menu utama di bagian bawah:
+
+Home 🏠
+
+Order 🛒
+
+Profile 👤
+
+Pengguna dapat memilih burger yang diinginkan dengan mengklik salah satu item dari daftar.
+
+🍔 Detail Produk dan Pemesanan
+
+Food Detail Activity
+Setelah burger diklik, pengguna akan melihat halaman detail berisi:
+
+Gambar burger ukuran besar
+
+Nama, deskripsi, dan harga burger
+
+Tombol Order Now
+
+Order Confirm Activity
+Setelah menekan Order Now, pengguna mengisi formulir pemesanan:
+
+Jumlah porsi
+
+Nama pemesan
+
+Alamat pengiriman
+
+⚠️ Jika ada kolom yang belum diisi, akan muncul Toast peringatan.
+Setelah lengkap, pengguna menekan Pesan Sekarang, dan data pesanan disimpan ke Order Manager (memori sementara), lalu diarahkan ke Success Activity.
+
+✅ Konfirmasi dan Riwayat Pesanan
+
+Success Activity
+Menampilkan pesan sukses seperti:
+
+"Halo Aldy, Pesananmu Berhasil Diterima! 🎉"
+
+Halaman ini juga menampilkan detail pesanan:
+
+Nama makanan
+
+Jumlah porsi
+
+Nama pemesan
+
+Alamat pengiriman
+
+Terdapat tombol Oke yang mengembalikan pengguna ke Home Activity.
+
+Order Fragment
+Dapat diakses melalui ikon keranjang belanja di Bottom Navigation.
+Berisi daftar pesanan dalam bentuk CardView:
+
+Gambar burger
+
+Nama burger
+
+Jumlah porsi
+
+Harga total
+
+Nama dan alamat pemesan
+
+Waktu pemesanan
+
+Jika belum ada pesanan, akan muncul pesan:
+
+“Belum ada pesanan. Yuk pesan burger favoritmu!”
+
+👤 Profil Pengguna dan Logout
+
+Profile Activity
+Menampilkan informasi pengguna:
+
+Foto profil
+
+Nama (misal: Aldy)
+
+Email (misal: Aldy@example.com
+)
+
+Terdapat dua kategori menu:
+
+Akun Saya: Edit Profile, Alamat, Riwayat Pesanan
+
+Pengaturan: Notifikasi, Bantuan, dan tombol Keluar (warna merah)
+
+Logout Process
+Saat pengguna menekan Keluar, aplikasi akan:
+
+Melakukan proses logout
+
+Mengarahkan kembali ke Login Activity
+
+Menghapus seluruh data pesanan dari memori (karena tidak menggunakan database)
+
+➡️ Setelah login kembali, pengguna harus melakukan pemesanan ulang untuk melihat riwayat baru.
