@@ -61,7 +61,7 @@ Setelah burger diklik, pengguna akan melihat halaman detail berisi:
 - Nama, deskripsi, dan harga burger  
 - Tombol **Order Now**
 
-### 🔹 Order Confirm Activity
+### 🔹 Order Activity
 Setelah menekan **Order Now**, pengguna mengisi formulir pemesanan yang berisi:
 - Jumlah porsi  
 - Nama pemesan  
