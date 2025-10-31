@@ -1,11 +1,8 @@
-# 🍔 Aplikasi Ruble Burger
-
-**Ruble Burger** adalah aplikasi pemesanan makanan online yang berfokus pada menu burger.  
-Aplikasi ini memiliki tampilan **sederhana**, **user-friendly**, dan alur kerja yang jelas mulai dari pembukaan aplikasi hingga proses logout.
-
+# aplikasi pemesanan makanan online yang berfokus pada menu burger.  
+Aplikasi ini dibuat untuk UTS Pengembangan Aplikasi Mobile
 ---
 
-## 🏁 Tahap Awal: Splash Screen dan Welcome
+## Pada tahap Awal yaitu Splash Screen dan Welcome
 
 ### 🔹 Splash Screen (`MainActivity`)
 Saat pengguna pertama kali membuka aplikasi, akan muncul tampilan **Splash Screen** selama 2–3 detik yang menampilkan **logo aplikasi**.
